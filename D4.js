@@ -34,6 +34,7 @@ function crazySum(numInt1, numInt2) {
 
 const finalResult = crazySum(14, 16);
 console.log(finalResult);
+
 /* ESERCIZIO 3
  Scrivi una funzione di nome "crazyDiff" che calcola la differenza assoluta tra un numero fornito come parametro e 19.
  Deve inoltre tornare la differenza assoluta moltiplicata per tre qualora il numero fornito sia maggiore di 19.
@@ -86,11 +87,14 @@ function epify(ins) {
     const word = "EPICODE";
     const display = ins.slice(ins - word);
     return display;
+  } else {
+    const compWord = "EPICODE" + ins;
+    return compWord;
   }
 }
 
-const finalPhrase = epify;
-console.log(finalPhrase("EPICODE è magnifica"));
+const finalPhrase = epify("EPICODE è magnifica");
+console.log(finalPhrase);
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
