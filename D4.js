@@ -51,8 +51,13 @@ function crazyDiff(numIns) {
   }
 }
 
-const diffFinal = crazyDiff(21);
-console.log(diffFinal);
+const diffFinal = crazyDiff(9);
+if (diffFinal < 0) {
+  let assResult = diffFinal * -1;
+  console.log(assResult);
+} else {
+  console.log(diffFinal);
+}
 
 /* ESERCIZIO 4
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
@@ -109,6 +114,17 @@ console.log(finalPhrase);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const reverseString = function (str) {
+  let newString = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    // console.log(str[i]);
+    newString = newString + str[i].toUpperCase();
+  }
+  return newString;
+};
+
+console.log(reverseString("epicode"));
+console.log(reverseString("Cosmin"));
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
